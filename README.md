@@ -3,15 +3,15 @@
 > Bem-vindo ao repositório do projeto SISPAR (Sistema de Solicitação de Reembolsos), desenvolvido como parte do ciclo Be Digital! Este é um sistema web simples que simula uma interface para solicitação e visualização de reembolsos. Ele foi projetado para praticar os conceitos de Front-end utilizando React + Vite , com foco em organização, funcionalidades básicas e estilização
 
 ## 📋 Índice
-1. Descrição do Projeto
-2. Funcionalidades Implementadas
-3. Estrutura do Projeto
-4. Como Executar o Projeto
-5. Tecnologias Utilizadas
-6. Links Importantes
-7. Dicas e Considerações Finais
+1. [Descrição do Projeto](#descricao-do-projeto)
+2. [Funcionalidades Implementadas](#funcionalidades-implementadas)
+3. [Estrutura do Projeto](#estrutura-do-projeto)
+4. [Como Executar o Projeto](#como-executar-o-projeto)
+5. [Tecnologias Utilizadas](#tecnologias-utilizadas)
+6. [Links Importantes](#links-importantes)
 
-## 📝 Descrição do Projeto
+
+## 📝 Descrição do Projeto <a id="descricao-do-projeto"></a>
 O SISPAR é um sistema web que permite aos usuários realizar login, navegar entre telas e solicitar reembolsos. Ele é composto por três principais telas:
 
 - Tela de Login: Ponto inicial do sistema, onde o usuário pode acessar a plataforma.
@@ -19,7 +19,7 @@ O SISPAR é um sistema web que permite aos usuários realizar login, navegar ent
 - Tela de Solicitação de Reembolsos : Onde o usuário pode preencher um formulário para solicitar um reembolso, com os dados sendo armazenados temporariamente.
 > Além disso, o sistema possui uma NavBar responsiva com ícones de navegação e um menu hambúrguer funcional.
 
-## ✅ Funcionalidades Implementadas
+## ✅ Funcionalidades Implementadas <a id="funcionalidades-implementadas"></a>
 ### 1. Tela de Login
 - **Botão "ENTRAR"** : Redireciona o usuário para a Tela de Reembolsos.
 - **Rota configurada** : Garante que o redirecionamento ocorra corretamente utilizando React Router.
@@ -36,10 +36,10 @@ O SISPAR é um sistema web que permite aos usuários realizar login, navegar ent
     - **Home** : Redireciona para a Tela de Reembolsos.
     - **Solicitação** : Redireciona para a Tela de Solicitação de Reembolsos.
     - **Logout** : Retorna o usuário à Tela de Login.
-- Menu Hambúrguer**:
+- **Menu Hambúrguer**:
     - Abre e fecha a barra de navegação lateral.
 
-## 📂 Estrutura do Projeto
+## 📂 Estrutura do Projeto <a id="estrutura-do-projeto"></a>
 - A estrutura do projeto foi organizada para facilitar a manutenção e escalabilidade:
 ~~~ 
 sispar/
@@ -65,7 +65,7 @@ sispar/
 ~~~
 
 
-## ▶️ Como Executar o Projeto
+## ▶️ Como Executar o Projeto <a id="como-executar-o-projeto"></a>
 - Para executar o projeto localmente, siga os passos abaixo:
 ### Pré-requisitos
 - Node.js instalado (versão 16 ou superior)
@@ -73,7 +73,7 @@ sispar/
 ### Passo a passo
 1. Clone este repositório:
 ~~~
-git clone https://github.com/seu-usuario/sispar.git
+git clone https://github.com/nonatodiego/sispar.git
 ~~~
 2. Navegue até a pasta do projeto:
 ~~~
@@ -95,17 +95,17 @@ yarn dev
 
 > Nota : Este projeto utiliza React Router para gerenciar as rotas e navegação entre telas. 
 
-## 💻 Tecnologias Utilizadas
-- React : Biblioteca JavaScript para construção da interface.
-- Vite : Ferramenta de build rápida para desenvolvimento front-end.
-- React Router : Gerenciamento de rotas e navegação.
-- CSS Modules : Estilização modular para evitar conflitos de classes.
-- Flexbox/Grid : Para criar layouts responsivos e organizados.
-- Figma : Protótipo visual do projeto
+## 💻 Tecnologias Utilizadas <a id="tecnologias-utilizadas"></a>
+- **React** : Biblioteca JavaScript para construção da interface.
+- **Vite** : Ferramenta de build rápida para desenvolvimento front-end.
+- **React Router** : Gerenciamento de rotas e navegação.
+- **CSS Modules** : Estilização modular para evitar conflitos de classes.
+- **Flexbox/Grid** : Para criar layouts responsivos e organizados.
+- **Figma** : Protótipo visual do projeto
 
-## 🔗 Links Importantes
-- Protótipo no Figma : [SISPAR](https://www.figma.com/file/seu-link?spm=5aebb161.2ef5001f.0.0.14b05171p3IwKG)
-- Imagens do Projeto : [Google Drive](https://drive.google.com/drive/folders/seu-link?spm=5aebb161.2ef5001f.0.0.14b05171p3IwKG)
-- Materiais de Apoio :
+## 🔗 Links Importantes <a id="links-importantes"></a>
+- **Protótipo no Figma** : [SISPAR](https://www.figma.com/file/seu-link?spm=5aebb161.2ef5001f.0.0.14b05171p3IwKG)
+- **Imagens do Projeto** : [Google Drive](https://drive.google.com/drive/folders/seu-link?spm=5aebb161.2ef5001f.0.0.14b05171p3IwKG)
+- **Materiais de Apoio** :
     -  [Unidades e Medidas, Cor e Tipografia](https://link-material-de-apoio/?spm=5aebb161.2ef5001f.0.0.14b05171p3IwKG)
     - [Flexbox para Estilização](https://link-material-de-apoio/?spm=5aebb161.2ef5001f.0.0.14b05171p3IwKG)
