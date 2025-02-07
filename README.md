@@ -42,26 +42,39 @@ O SISPAR é um sistema web que permite aos usuários realizar login, navegar ent
 ## 📂 Estrutura do Projeto <a id="estrutura-do-projeto"></a>
 - A estrutura do projeto foi organizada para facilitar a manutenção e escalabilidade:
 ~~~ 
-sispar/
-├── public/
-│   └── assets/             # Imagens e ícones utilizados
-├── src/
-│   ├── components/         # Componentes reutilizáveis
-│   │   ├── Navbar.jsx      # Componente da NavBar
-│   │   ├── LoginForm.jsx   # Componente do formulário de login
-│   │   ├── RefundsCard.jsx # Componente do card de reembolsos
-│   │   └── RequestForm.jsx # Componente do formulário de solicitação
-│   ├── pages/              # Páginas principais
-│   │   ├── Login.jsx       # Tela de Login
-│   │   ├── Refunds.jsx     # Tela de Reembolsos
-│   │   └── Request.jsx     # Tela de Solicitação de Reembolsos
-│   ├── App.jsx             # Configuração das rotas e layout principal
-│   ├── main.jsx            # Ponto de entrada da aplicação
-│   └── styles/             # Estilos globais e modulares
-│       ├── global.css      # Estilos globais
-│       └── components.css  # Estilos específicos de componentes
-├── README.md               # Documentação do projeto
-└── package.json            # Dependências e scripts
+SISPAR/
+├── node_modules/              # Dependências do projeto (geradas automaticamente)
+├── public/                    # Arquivos públicos acessíveis diretamente pelo navegador
+│   ├── navio.png              # Imagem ou asset público
+│   └── index.html             # Página HTML principal (gerada pelo Vite)
+├── src/                       # Código-fonte da aplicação
+│   ├── assets/                # Assets globais (imagens, ícones, etc.)
+│   │   └── images/            # Subpasta para imagens
+│   │       └── logo.svg       # Exemplo de logo
+│   ├── components/            # Componentes reutilizáveis
+│   │   ├── login/             # Componente de Login
+│   │   │   ├── Login.jsx      # Lógica do componente
+│   │   │   └── Login.module.scss # Estilização específica do componente
+│   │   ├── navbar/            # Componente Navbar
+│   │   │   ├── Navbar.jsx     # Lógica do componente
+│   │   │   └── Navbar.module.scss # Estilização específica do componente
+│   │   ├── reembolso/         # Componente Reembolso
+│   │   │   ├── Reembolso.jsx  # Lógica do componente
+│   │   │   └── Reembolso.module.scss # Estilização específica do componente
+│   │   └── solicitacao/       # Componente Solicitação
+│   │       ├── Solicitacao.jsx # Lógica do componente
+│   │       └── Solicitacao.module.scss # Estilização específica do componente
+│   ├── styles/                # Estilos globais
+│   │   ├── global.module.scss # Estilos globais da aplicação
+│   │   └── variables.scss     # Variáveis de estilo (cores, fontes, etc.)
+│   ├── App.jsx                # Componente principal da aplicação
+│   └── main.jsx               # Ponto de entrada da aplicação
+├── .gitignore                 # Arquivos e pastas ignorados pelo Git
+├── index.css                  # Estilos globais (opcional, se necessário)
+├── vite.config.js             # Configuração do Vite
+├── eslint.config.js           # Configuração do ESLint
+├── package.json               # Dependências e scripts do projeto
+└── README.md                  # Documentação do projeto
 ~~~
 
 
