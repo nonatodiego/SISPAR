@@ -66,7 +66,7 @@ sispar/
 
 
 ## ▶️ Como Executar o Projeto <a id="como-executar-o-projeto"></a>
-- Para executar o projeto localmente, siga os passos abaixo:
+> Para executar o projeto localmente, siga os passos abaixo:
 ### Pré-requisitos
 - Node.js instalado (versão 16 ou superior)
 - npm ou yarn instalado
