@@ -1,0 +1,48 @@
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 100%;
+    height: 100vh;
+}
+
+section:first-child {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/imagem\ tela\ de\ login.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+section:first-child + section {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+
+    img {
+        margin-bottom: 1rem;
+    }
+   
+    h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.25rem;
+        font-weight: 700;
+        font-size: 2rem;
+        margin-bottom: .5rem;
+    }
+
+    p:first-of-type {
+        color: #0844C4;
+        font-weight: 700;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+}
