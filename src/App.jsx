@@ -1,7 +1,9 @@
+import Login from "./pages/Login";
+
 export default function App() {
   return (
     <>
-      <h1>SISPAR</h1>
+      <Login />
     </>
   )
 }
