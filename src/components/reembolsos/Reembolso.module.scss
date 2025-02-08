@@ -1,0 +1,56 @@
+header {
+    display: flex;
+    flex-direction: column;
+    width: 5.5rem;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+
+
+    .abrirMenu,
+    .home,
+    .reembolso,
+    .pesquisa,
+    .historico,
+    .btnSair  {
+        background-color: #0844C4;        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px ;
+       border-radius: 6px;
+       cursor: pointer;
+    }
+
+
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .profile {
+            height: 6.5rem;
+            margin-bottom: 64px;
+            cursor: pointer;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: space-between;
+            height: 14.25rem;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+    }
+
+    .btnSair {
+        background-color: #63758D;
+    }
+
+
+}
