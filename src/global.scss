@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+$azul-escuro: #0844C4;
+$azul-claro: #00BEDD;
+$azul-claro-hover: #00ACC7;
+$azul-escuro-hover: #001A3D;
+$erro: #A60B2F;
+$cinza-claro: #CBD4E1;
+$cinza-escuro: #23282F;
+$place-holder: #898D93;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;   
+}

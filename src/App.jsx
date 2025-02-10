@@ -1,6 +1,6 @@
 import '@fontsource/inter';
-import Login from "./components/login/login"
-import './styles/global.module.scss'
+import './global.scss'
+import Login from "./pages/login/Login.jsx"
 
 export default function App() {
   return (
