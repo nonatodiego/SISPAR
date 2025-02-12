@@ -7,31 +7,95 @@
     justify-content: space-around;
     height: 100vh;
     width: 88px;
+    transition: width 0.3s ease-in-out;
+
+    border: 1px solid red;
+    
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        list-style: none;    
+    }   
+
+    nav ul li {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        transition: padding 0.2s ease-in-out;
+    }
+    
+    
+    .iconMenu,.iconSair,
+    .navIcons {    
+        background-color: $azul-escuro;
+        cursor: pointer;
+        width: 48px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+    }
+
+    .profileIcon {
+        display: flex;
+    }
+
+    .navIcons {
+        flex-shrink: 0;
+    }
+
+    .perfilIcon {
+        background-color: transparent;
+    }
+
+   
+
+    
 }
 
-nav ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    list-style: none;    
+// HEADER HOVER
+
+.header:hover {
+    width: 11.875rem;
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        align-items: center;
+    }
+    
+    nav ul li {
+        display: flex; /* Adicionado */
+        align-items: center; /* Adicionado */
+        gap: 15px;
+        width: 100%;
+        padding: 8px 0;
+        border: 1px solid green;
+
+        span {
+            cursor: pointer;
+        }
+    }
+
+    .iconMenu, .iconSair {
+        margin-right: 3rem;
+    }
+
+    /* Espaçamento entre o ícone e o texto */
+    .navIcons {
+        margin-right: 0.5rem; /* Ajuste conforme necessário */
+    }
+
+    span:not(.navIcons) {
+        white-space: nowrap;
+        font-size: 1rem;
+    }
+
+    .iconMenu, .iconSair {
+        margin-right: 121px;
+        
+    }
 }
-
-
-nav ul li:first-child {
-    margin-bottom: 2rem;
-    background-color: transparent
-}
-
-.iconMenu,.iconSair,
-ul li {    
-    background-color: $azul-escuro;
-    cursor: pointer;
-    width: 48px;
-    height: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    border-radius: 6px;
-}
-
