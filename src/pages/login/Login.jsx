@@ -1,7 +1,11 @@
+import {useNavigate} from 'react-router-dom';
 import logo from '../../assets/logo-ws.png';
 import styles from './Login.module.scss';
 
 function Login() {
+
+    const navigate = useNavigate(); // Iniciando o Hook de navegação
+    const irParaReembolsos = () => navigate('/reembolsos'); // Função para navegar para a página de reembolsos
     return (
         <>
             <main>
@@ -19,7 +23,12 @@ function Login() {
 
                             <a href='#'>Esqueci minha senha</a>
                             <div className={styles.containerButtons}>
-                                <button className={styles.loginButton}>Entrar</button>
+                                <button 
+                                    className={styles.loginButton}
+                                    onClick={irParaReembolsos}
+                                >
+                                    Entrar
+                                </button>
                                 <button className={styles.createAccountButton}>Criar conta</button>
                             </div>
                         </form>
