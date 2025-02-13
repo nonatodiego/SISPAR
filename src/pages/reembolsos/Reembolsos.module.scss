@@ -1,0 +1,152 @@
+@import '../../global.scss';
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    
+    width: 100vw;
+    height: 100vh;
+}
+
+navbar {
+    width: 10vw;
+}
+
+.conteudo {
+    width: 90vw;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 149px;
+        margin-top: 2rem;
+
+        img, p {
+            cursor: pointer;
+        }        
+    }
+
+    main {
+       border: 1px solid black;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .titulo {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            gap: .5rem;
+
+            h1 {
+                font-size: 2rem;
+                font-weight: 700;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+        }
+
+        // .mainContainer {
+        //     // display: flex;
+        //     // flex-direction: column;
+        //     // border: 1px solid green;
+        // }
+
+        .acoes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+         
+
+            
+            span {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border: .8px solid $cinza-claro;
+                gap: .5rem;
+                border-radius: 6px;
+                cursor: pointer;
+
+                width: 290px;
+                height: 209px;
+
+                img {
+                    width: 48px;
+                    height: 48px;
+                }
+
+                p {
+                    font-size: 21px;
+                    font-weight: 700;
+                    color: $cinza-escuro;
+                }
+            }
+            
+            
+        }
+
+        .status {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 4rem;
+
+            border: .8px solid $cinza-claro;
+            border-radius: 6px;
+            padding: 2rem 4rem;
+
+            span {
+                display: flex;
+                gap: .5rem;
+                align-items: center;
+
+                div {
+                    background-color: $azul-claro;
+                    padding: 8px;
+                    border-radius: 6px;                    
+                }  
+
+                #analisando {
+                    background-color: $laranja;
+                }
+
+                #aprovados {
+                    background-color: $verde;
+                }
+
+                #rejeitados {
+                    background-color: $erro;
+                }
+               
+
+                
+                
+                p {                    
+                    b {
+                        margin-right: 4px;
+                    }
+                }
+
+            }
+        }
+
+        
+    }
+}
