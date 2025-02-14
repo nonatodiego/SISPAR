@@ -1,152 +1,74 @@
 @import '../../global.scss';
 
-
-.container {
+header {
     display: flex;
-    flex-direction: row;
-    
-    width: 100vw;
-    height: 100vh;
+    width: 10%;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 5vh;
 }
 
-navbar {
-    width: 10vw;
+.mainReembolsos {
+    // border: 1px solid red;
+    height: 95vh;
 }
 
-.conteudo {
-    width: 90vw;
-    border: 1px solid red;
+.containerCards {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        width: 149px;
-        margin-top: 2rem;
-
-        img, p {
-            cursor: pointer;
-        }        
-    }
-
-    main {
-       border: 1px solid black;
-        flex: 1;
+    width: 50vw;
+    margin: 2rem 0;
+    article {
+        width: 15vw;
+        height: 20vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        .titulo {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+        border: .8px $cinza-claro solid;
+        border-radius: 6px;
+    }
+}
 
-            gap: .5rem;
+.containerStatus {
+    border: .8px $cinza-claro solid;
+    border-radius: 6px;
+    height: 15vh;
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
-            h1 {
-                font-size: 2rem;
-                font-weight: 700;
-            }
+    div {
+        display: flex;
+        gap: .5rem;
+        width: 20%;
+        align-items: center;
+        height: 5vh;
 
-            p {
-                font-weight: 400;
-                font-size: 1rem;
-                margin-bottom: 2rem;
-            }
-        }
-
-        // .mainContainer {
-        //     // display: flex;
-        //     // flex-direction: column;
-        //     // border: 1px solid green;
-        // }
-
-        .acoes {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-            margin-bottom: 2rem;
-         
-
-            
-            span {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                border: .8px solid $cinza-claro;
-                gap: .5rem;
-                border-radius: 6px;
-                cursor: pointer;
-
-                width: 290px;
-                height: 209px;
-
-                img {
-                    width: 48px;
-                    height: 48px;
-                }
-
-                p {
-                    font-size: 21px;
-                    font-weight: 700;
-                    color: $cinza-escuro;
-                }
-            }
-            
-            
-        }
-
-        .status {
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            gap: 4rem;
-
-            border: .8px solid $cinza-claro;
+        .containerIcon {
             border-radius: 6px;
-            padding: 2rem 4rem;
+            display: flex;
+            
+            display: flex;          
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: $azul-claro;  
+        }       
+    }
+}
 
-            span {
-                display: flex;
-                gap: .5rem;
-                align-items: center;
+.containerSistema {
+    display: flex;
+    width: 9vw;
+    justify-content: space-between;
+    margin-top: 2rem;
 
-                div {
-                    background-color: $azul-claro;
-                    padding: 8px;
-                    border-radius: 6px;                    
-                }  
-
-                #analisando {
-                    background-color: $laranja;
-                }
-
-                #aprovados {
-                    background-color: $verde;
-                }
-
-                #rejeitados {
-                    background-color: $erro;
-                }
-               
-
-                
-                
-                p {                    
-                    b {
-                        margin-right: 4px;
-                    }
-                }
-
-            }
-        }
-
-        
+    p {
+        color: $azul-escuro;
     }
 }
