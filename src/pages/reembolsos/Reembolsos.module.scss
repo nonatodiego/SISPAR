@@ -1,5 +1,10 @@
 @import '../../global.scss';
 
+.containerReembolsos {
+    display: flex;
+    flex-direction: row;
+}     
+
 header {
     display: flex;
     width: 10%;
@@ -11,6 +16,7 @@ header {
 .mainReembolsos {
     // border: 1px solid red;
     height: 95vh;
+    width: 100vw;
 }
 
 .containerCards {

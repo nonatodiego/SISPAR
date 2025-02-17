@@ -10,12 +10,15 @@ import SolicitarHistorico from '../../assets/solicitarHistorico.png';
 import SolicitarReembolsos from '../../assets/solicitarReembolsos.png';
 import Solicitados from '../../assets/solicitados.png';
 import SistemaAtualizado from '../../assets/sistema-atualizado.png';
-
+// importando o componente NavBar
+import NavBar from '../../components/navbar/NavBar.jsx';
 
 
 export default function Reembolsos() {
   return (
     <>
+    <div className={styles.containerReembolsos}>
+      <NavBar />
       <header>
         <img src={Home} alt="" />
         <img src={Seta} alt="" />
@@ -76,7 +79,7 @@ export default function Reembolsos() {
           </div>
         </section>
       </main>
-
+      </div>
     </>
   )
 }
