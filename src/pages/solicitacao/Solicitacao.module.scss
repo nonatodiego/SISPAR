@@ -1,0 +1,85 @@
+@import '../../global.scss';
+
+.layoutSolicitacao {
+    display: flex;
+}
+
+.containerSolicitacao {
+    border: 1px blue solid;
+    width: 95vw;
+}
+
+.headerSolicitacao {
+    // border: 1px solid red;
+    width: 20vw;
+    height: 8vh;
+}
+
+.mainSolicitacao {
+    border: 1px solid black;
+}
+
+input, select, textarea {
+    border-radius: 6px;
+    border: .8px solid #CBD4E1;
+    height: 3vh;
+    width: 100%;
+}
+
+label {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 10vh;
+}
+
+.formSolicitacao {
+    display: flex;
+    border: 1px solid yellow;
+    width: 100%;
+    justify-content: space-between;
+
+    .grupo1 {
+        // border: solid green;
+        width: 30%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.inputNome {
+    // border: 1px solid red;
+    width: 45%;
+}
+
+.inputEmpresa {
+    // border: solid yellowgreen;
+    width: 25%;
+}
+
+.inputContas {
+    // border: solid orange;
+    width: 25%;
+}
+
+.inputMotivo {
+    // border: solid blueviolet;
+    width: 100%;
+}
+
+.barraVertical {
+    width: .1vw;
+    border: 1px solid $cinza-claro;
+    height: 25vh;
+}
+
+.grupo2 {
+    width: 60%;
+    border: 1px solid red;
+}
+
+
