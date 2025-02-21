@@ -42,39 +42,37 @@ O SISPAR é um sistema web que permite aos usuários realizar login, navegar ent
 ## 📂 Estrutura do Projeto <a id="estrutura-do-projeto"></a>
 - A estrutura do projeto foi organizada para facilitar a manutenção e escalabilidade:
 ~~~ 
-SISPAR/
-├── node_modules/              # Dependências do projeto (geradas automaticamente)
-├── public/                    # Arquivos públicos acessíveis diretamente pelo navegador
-│   ├── navio.png              # Imagem ou asset público
-│   └── index.html             # Página HTML principal (gerada pelo Vite)
-├── src/                       # Código-fonte da aplicação
-│   ├── assets/                # Assets globais (imagens, ícones, etc.)
-│   │   └── images/            # Subpasta para imagens
-│   │       └── logo.svg       # Exemplo de logo
-│   ├── components/            # Componentes reutilizáveis
-│   │   ├── login/             # Componente de Login
-│   │   │   ├── Login.jsx      # Lógica do componente
-│   │   │   └── Login.module.scss # Estilização específica do componente
-│   │   ├── navbar/            # Componente Navbar
-│   │   │   ├── Navbar.jsx     # Lógica do componente
-│   │   │   └── Navbar.module.scss # Estilização específica do componente
-│   │   ├── reembolso/         # Componente Reembolso
-│   │   │   ├── Reembolso.jsx  # Lógica do componente
-│   │   │   └── Reembolso.module.scss # Estilização específica do componente
-│   │   └── solicitacao/       # Componente Solicitação
-│   │       ├── Solicitacao.jsx # Lógica do componente
-│   │       └── Solicitacao.module.scss # Estilização específica do componente
-│   ├── styles/                # Estilos globais
-│   │   ├── global.module.scss # Estilos globais da aplicação
-│   │   └── variables.scss     # Variáveis de estilo (cores, fontes, etc.)
-│   ├── App.jsx                # Componente principal da aplicação
-│   └── main.jsx               # Ponto de entrada da aplicação
-├── .gitignore                 # Arquivos e pastas ignorados pelo Git
-├── index.css                  # Estilos globais (opcional, se necessário)
-├── vite.config.js             # Configuração do Vite
-├── eslint.config.js           # Configuração do ESLint
-├── package.json               # Dependências e scripts do projeto
-└── README.md                  # Documentação do projeto
+sispar/
+├── node_modules/           # Dependências do projeto instaladas via npm/yarn
+├── public/                 # Arquivos estáticos acessíveis publicamente
+│   └── navio.png           # Imagem usada no projeto (ex: logo)
+├── src/
+│   ├── assets/             # Recursos como ícones/fonts (não utilizado no momento)
+│   ├── components/         # Componentes reutilizáveis
+│   │   └── navbar/         # Componente de navegação principal
+│   │       ├── NavBar.jsx      # Lógica e estrutura do navbar
+│   │       └── NavBar.module.scss  # Estilos específicos do navbar (CSS Modules)
+│   ├── pages/              # Componentes de página/routing
+│   │   ├── login/          # Página de login
+│   │   │   ├── Login.jsx       # Formulário de autenticação
+│   │   │   └── Login.module.scss  # Estilos da página de login
+│   │   ├── reembolsos/     # Página de gestão de reembolsos
+│   │   │   ├── Reembolsos.jsx    # Listagem/controle de reembolsos
+│   │   │   └── Reembolsos.module.scss
+│   │   └── solicitacao/    # Página de solicitação de reembolsos
+│   │       ├── Solicitacao.jsx   # Formulário de solicitação
+│   │       └── Solicitacao.module.scss
+│   ├── App.jsx             # Componente raiz que organiza o layout geral
+│   ├── global.scss         # Estilos globais aplicados a toda aplicação
+│   ├── index.css           # Estilos base do documento (opcional/reset CSS)
+│   └── main.jsx            # Ponto de entrada da aplicação (renderiza App)
+├── .gitignore              # Arquivos/pastas ignorados pelo Git
+├── eslint.config.js        # Configurações de linting para qualidade de código
+├── index.html              # Template HTML principal
+├── package-lock.json       # Versões exatas das dependências
+├── package.json            # Metadados e scripts do projeto
+├── README.md               # Documentação do projeto
+└── vite.config.js          # Configurações específicas do Vite (build/dev server)
 ~~~
 
 
