@@ -5,7 +5,7 @@
 }
 
 .containerSolicitacao {
-    border: 1px blue solid;
+    /* border: 1px blue solid; */
     width: 95vw;
 }
 
@@ -16,13 +16,17 @@
 }
 
 .mainSolicitacao {
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 input, select, textarea {
     border-radius: 6px;
     border: .8px solid #CBD4E1;
-    height: 3vh;
+    height: 5vh;
     width: 100%;
 }
 
@@ -37,7 +41,7 @@ textarea {
 
 .formSolicitacao {
     display: flex;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     width: 100%;
     justify-content: space-between;
 
@@ -73,13 +77,76 @@ textarea {
 
 .barraVertical {
     width: .1vw;
-    border: 1px solid $cinza-claro;
+    /* border: 1px solid $cinza-claro; */
     height: 25vh;
 }
 
 .grupo2 {
     width: 60%;
-    border: 1px solid red;
+    height: 25vh;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.inputData {
+    /* border: solid green; */
+    width: 25%;
+}
 
+.despesas {
+    /* border: solid blue; */
+    width: 30%;
+}
+
+.centroDeCusto {
+    /* border: solid yellow; */
+    width: 40%;
+}
+
+.ordem, .divisoes, .pep, .distancia {
+    /* border: solid red; */
+    width: 9%;
+}
+
+.moeda, .valorKm, .valorFaturado, .despesas {
+    /* border: solid pink; */
+    width: 12%;
+}
+
+.botoes {
+    width: 15%;
+    // border: solid purple; 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btnSalvar {
+    background-color: $azul-escuro;
+    color: white;
+    width: 5vw;
+}
+
+.btnDel {
+    background-color: $azul-claro;
+    color: white;
+    width: 2vw;
+}
+
+table {
+    width: 100%;
+    border: solid .8px $cinza-claro;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: $cinza-claro;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+td, th {
+    border: solid .8px $cinza-claro;
+    text-align: center;
+}
