@@ -51,21 +51,21 @@ export default function Reembolsos() {
               <p>Solicitados</p>
             </div>
             <div>
-              <div className={styles.containerIcon}>
+              <div className={styles.containerIcon && styles.analisebg}>
                 <img className={styles.analise} src={Analisando} alt="" />
               </div>
               <h4>74</h4>
               <p>Em Análise</p>
             </div>
             <div>
-            <div className={styles.containerIcon}>
+            <div className={styles.containerIcon && styles.aprovadosbg}>
                 <img className={styles.aprovados} src={NumeroAprovados} alt="" />
               </div>
               <h4>195</h4>
               <p>Aprovador</p>
             </div>
             <div>
-            <div className={styles.containerIcon}>
+            <div className={styles.containerIcon && styles.rejeitadosbg}>
                 <img className={styles.rejeitados} src={NumeroReprovados} alt="" />
               </div>
               <h4>41</h4>
