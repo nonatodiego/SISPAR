@@ -33,9 +33,10 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
         border: .8px $cinza-claro solid;
         border-radius: 6px;
+
+        gap: 1rem;
     }
 }
 
@@ -58,7 +59,7 @@ header {
         .containerIcon,.analisebg, .aprovadosbg, .rejeitadosbg {
             border-radius: 6px;
             display: flex;
-            
+            cursor: pointer;
             display: flex;          
             flex-direction: column;
             align-items: center;

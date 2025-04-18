@@ -5,18 +5,15 @@
 }
 
 .containerSolicitacao {
-    /* border: 1px blue solid; */
     width: 95vw;
 }
 
 .headerSolicitacao {
-    // border: 1px solid red;
     width: 20vw;
     height: 8vh;
 }
 
 .mainSolicitacao {
-    /* border: 1px solid black; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -41,12 +38,10 @@ textarea {
 
 .formSolicitacao {
     display: flex;
-    /* border: 1px solid yellow; */
     width: 100%;
     justify-content: space-between;
 
     .grupo1 {
-        // border: solid green;
         width: 30%;
         display: flex;
         flex-wrap: wrap;
@@ -56,67 +51,56 @@ textarea {
 }
 
 .inputNome {
-    // border: 1px solid red;
     width: 45%;
 }
 
 .inputEmpresa {
-    // border: solid yellowgreen;
     width: 25%;
 }
 
 .inputContas {
-    // border: solid orange;
     width: 25%;
 }
 
 .inputMotivo {
-    // border: solid blueviolet;
     width: 100%;
 }
 
 .barraVertical {
     width: .1vw;
-    /* border: 1px solid $cinza-claro; */
     height: 25vh;
 }
 
 .grupo2 {
     width: 60%;
     height: 25vh;
-    /* border: 1px solid red; */
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .inputData {
-    /* border: solid green; */
     width: 25%;
 }
 
 .despesas {
-    /* border: solid blue; */
     width: 30%;
 }
 
 .centroDeCusto {
-    /* border: solid yellow; */
     width: 40%;
 }
 
 .ordem, .divisoes, .pep, .distancia {
-    /* border: solid red; */
     width: 9%;
 }
 
 .moeda, .valorKm, .valorFaturado, .despesas {
-    /* border: solid pink; */
     width: 12%;
 }
 
 .botoes {
     width: 15%;
-    // border: solid purple; 
     display: flex;
     align-items: center;
     justify-content: space-evenly;
