@@ -1,4 +1,5 @@
-import { useState } from 'react'; // Certifique-se de importar o useState
+import { useEffect, useState } from 'react'; // Certifique-se de importar o useState
+import Api from "../../Services/Api.jsx";
 import NavBar from '../../components/navbar/NavBar.jsx';
 import styles from "./Solicitacao.module.scss";
 import Home from '../../assets/iconHome.png';
@@ -43,10 +44,52 @@ export default function Solicitacao() {
       distanciaKm,
       valorKm,
       valorFaturado,
-      despesa
+      despesa,
     };
     setDadosReembolso(dadosReembolso.concat(objetoReembolso)); // Adiciona o novo reembolso ao estado
+    handleDelete(); // Limpa os campos após o envio
   };
+
+  // Função para deletar um reembolso
+  const handleDelete = () => {
+    setColaborador(""),
+    setEmpresa(""),
+    setnPrestacao(""),
+    setDescricao(""),
+    setData(""),
+    setTipoReembolso(""),
+    setCentroCusto(""),
+    setOrdemInterna(""),
+    setDivisao(""),
+    setPep(""),
+    setMoeda(""),
+    setDistanciaKm(""),
+    setValorKm(""),
+    setValorFaturado(""),
+    setDespesa("");
+  };
+
+  // Função para enviar os dados para a API
+  const [send, setSend] = useState(false); // Estado para controlar o envio dos dados
+  const sendToApi = async () => {
+    try{
+      const response = await Api.post("/reembolso", dadosReembolso);
+      console.log("Resposta da API", response.data); // Exibe a resposta da API no console
+    } catch (error) {
+      console.error("Erro ao enviar os dados:", error);
+    }
+  };
+
+  useEffect(() => {
+    if(send) {
+      setDadosReembolso([]); // Limpa os dados após o envio
+      send(false); // Reseta o estado de envio
+    }
+  })
+
+
+
+
 
   return (
     <>
@@ -147,7 +190,7 @@ export default function Solicitacao() {
                 </div>
                 <div className={styles.botoes}>
                   <button type='submit' onClick={handleSubmit} className={styles.btnSalvar}>+ Salvar</button>
-                  <button className={styles.btnDel}>Del</button>
+                  <button onClick={handleDelete} className={styles.btnDel}>Del</button>
                 </div>
               </div>
             </form>
@@ -199,6 +242,7 @@ export default function Solicitacao() {
 
               </tbody>
             </table>
+            <button>Enviar para análise</button>
           </main>
         </div>
       </div>
